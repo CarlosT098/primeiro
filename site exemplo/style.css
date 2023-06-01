@@ -1,0 +1,18 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tela{
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+#limite{
+    position: absolute;
+    margin-top: 30%;
+    
+}
