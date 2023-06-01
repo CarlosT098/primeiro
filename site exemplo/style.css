@@ -6,13 +6,65 @@
 }
 #tela{
     border: 1px solid black;
-    width: 80%;
-    height: 500px;
+    width: 700px;
+    height: 900px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
-#limite{
+#t1{
     position: absolute;
-    margin-top: 30%;
-    
+    width: 175px;
+    animation: descer 5s infinite linear;
+}
+#t2{
+    position: absolute;
+    width: 175px;
+    margin-left: 175px;
+}
+#t3{
+    position: absolute;
+    width: 175px;
+    margin-left: 350px;
+}
+#t4{
+    position: absolute;
+    width: 175px;
+    margin-left: 525px;
+}
+#amarelo{
+    position: absolute;
+    bottom: 0%;
+    width: 175px;
+    height: 100px;
+    margin-left: 175px;
+}
+#laranja{
+    position: absolute;
+    bottom: 0%;
+    width: 175px;
+    height: 100px;
+    margin-left: 350px;
+}
+#roxo{
+    position: absolute;
+    bottom: 0%;
+    width: 170px;
+    height: 95px;
+    margin-left: 525px;
+}
+#vermelho{
+    position:absolute;
+    bottom: 0%;
+    width: 175px;
+    height: 100px;
+}
+@keyframes descer {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 100%;
+    }
 }
