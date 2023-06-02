@@ -1,7 +1,4 @@
 *{
-
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 #tela{
@@ -15,49 +12,55 @@
 #t1{
     position: absolute;
     width: 175px;
-    animation: descer 5s infinite linear;
+    animation: descer 2s infinite linear;
 }
 #t2{
     position: absolute;
     width: 175px;
     margin-left: 175px;
-}
+    animation: descer 4s infinite linear;
+}   
 #t3{
     position: absolute;
     width: 175px;
     margin-left: 350px;
+    animation: descer 3s infinite linear;
 }
 #t4{
     position: absolute;
     width: 175px;
     margin-left: 525px;
+    animation: descer 2s infinite linear;
 }
 #amarelo{
     position: absolute;
-    bottom: 0%;
+    bottom: 5px;
     width: 175px;
     height: 100px;
     margin-left: 175px;
 }
 #laranja{
     position: absolute;
-    bottom: 0%;
+    bottom: 5px;
     width: 175px;
     height: 100px;
     margin-left: 350px;
 }
 #roxo{
     position: absolute;
-    bottom: 0%;
-    width: 170px;
-    height: 95px;
+    bottom: 5px;
+    width: 175px;
+    height: 100px;
     margin-left: 525px;
 }
 #vermelho{
     position:absolute;
-    bottom: 0%;
+    bottom: 5px;
     width: 175px;
     height: 100px;
+}
+button{
+    font-size:large;
 }
 @keyframes descer {
     from {
@@ -67,4 +70,8 @@
     to {
         top: 100%;
     }
+}
+h1{
+    margin-top: 20%;
+    text-align: center;
 }
