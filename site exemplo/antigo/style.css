@@ -23,20 +23,20 @@ body{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-color: antiquewhite;
+    background-color: rgb(114, 114, 114);
     box-shadow: 3px 3px 3px 3px rgb(22, 22, 22);
 }
 #t1{
     position: absolute;
     width: 175px;
-    animation: descer 1s infinite linear;
+    animation: descer 3s infinite linear;
 }
 #t2{
     position: absolute;
     width: 175px;
     margin-left: 175px;
     background-position: 100%;
-    /*animation: descer 4s infinite linear;*/
+    animation: descer 2s infinite linear;
 }   
 #t3{
     position: absolute;
@@ -48,7 +48,7 @@ body{
     position: absolute;
     width: 175px;
     margin-left: 525px;
-    /*animation: descer 2s infinite linear;*/
+    /*animation: descer 4s infinite linear;*/
 }
 #f{
     position: absolute;
@@ -97,12 +97,9 @@ button{
 h1{
     margin-top: auto;
     text-align: center;
+    color: #dadada;
 }
-#cont{
+.marcador{
     margin-top: 20%;
     
-}
-body img{
-    width: auto;
-    height: auto;
 }

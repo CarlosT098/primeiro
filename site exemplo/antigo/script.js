@@ -19,8 +19,8 @@ function press(key){
     switch (key) {
         case "d":
             const t1Position = t1.offsetTop;
-            if (t1Position >=793) {
-                console.log(t1Position);
+            if (t1Position >=760) {
+             
                 c++;      
                 p++;   
                 d.style.backgroundColor='green';                
@@ -32,8 +32,8 @@ function press(key){
             break;
         case "f":
             const t2Position = t2.offsetTop;
-            if (t2Position >=793) {
-                console.log(t2Position);
+            if (t2Position >=760) {
+               
                 c++;
                 p++;
                 f.style.backgroundColor='green';
@@ -45,8 +45,8 @@ function press(key){
             break;
         case "j":
             const t3Position = t3.offsetTop;
-            if (t3Position >=793) {
-                console.log(t3Position);
+            if (t3Position >=760) {
+                
                 c++;
                 p++;
                 j.style.backgroundColor='green';
@@ -58,8 +58,8 @@ function press(key){
             break;
         case "k":
             const t4Position = t4.offsetTop;
-            if (t4Position >=793) {
-                console.log(t4Position);
+            if (t4Position >=760) {
+                
                 c++;
                 p++;
                 k.style.backgroundColor='green';
@@ -69,12 +69,37 @@ function press(key){
                 k.style.backgroundColor='red';
             }
             break;
+
+        
     }
     
     const cont = document.querySelector('#cont');
-    cont.innerHTML = p;
+    cont.innerHTML = c;
+    const point = document.querySelector('#point');
+    point.innerHTML = p;
 }
+let barra = 0;
+setInterval(()=>{ 
+    const t1Position = t1.offsetTop;
+    const t2Position = t2.offsetTop;
+    const t3Position = t3.offsetTop;
+    const t4Position = t4.offsetTop;
+    if (t1Position>80 || t2Position>880 || t3Position>880 || t4Position>880) {
+        barra++;
+      
+    }
+    if (barra>c) {
+        console.log("passou");
+        console.log(barra);
+        barra = 0;
+        c = 0;
+    }
 
+    const cont = document.querySelector('#cont');
+    cont.innerHTML = c;
+    const point = document.querySelector('#point');
+    point.innerHTML = p;
+},1000)
 
 
 /*function press(x){
