@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(45deg, red, blue, orange);
-    background-size: 200% 200%;
-    animation: color 8s linear infinite;
+    background: linear-gradient(45deg, orange, red, blue, green);
+    background-size: 300% 300%;
+    animation: color 7s linear infinite;
 }
 @keyframes color {
     0%{
-        background-position: 0%;
+        background-position: 0% ;
     }
     50%{
         background-position: 100%;
