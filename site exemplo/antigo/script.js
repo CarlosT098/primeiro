@@ -2,53 +2,28 @@ const t1 = document.querySelector('#t1');
 const t2 = document.querySelector('#t2');
 const t3 = document.querySelector('#t3');
 const t4 = document.querySelector('#t4');
-const t5 = document.querySelector('#t5');
-
+let d = document.querySelector('#d');
+let f = document.querySelector('#f');
+let j = document.querySelector('#j');
+let k = document.querySelector('#k');
 var c = 0;
+var p = 0;
 document.addEventListener("keydown", function(event) {
     press(event.key)
 } )
 function press(key){
-    setTimeout(()=>{a.style.backgroundColor='white'},500);
-    setTimeout(()=>{s.style.backgroundColor='white'},500);
-    setTimeout(()=>{d.style.backgroundColor='white'},500);
-    setTimeout(()=>{f.style.backgroundColor='white'},500);
-    setTimeout(()=>{g.style.backgroundColor='white'},500);
+    setTimeout(()=>{d.style.backgroundColor='white'},500)
+    setTimeout(()=>{f.style.backgroundColor='white'},500)
+    setTimeout(()=>{j.style.backgroundColor='white'},500)
+    setTimeout(()=>{k.style.backgroundColor='white'},500)
     switch (key) {
-        case "a":
+        case "d":
             const t1Position = t1.offsetTop;
-            console.log(t1Position);
             if (t1Position >=793) {
                 console.log(t1Position);
                 c++;      
-                let a = document.querySelector('#a');          
-                a.style.backgroundColor='#66FF99';                
-            }
-            else{
-                c=0
-                a.style.backgroundColor='red';
-            }
-            break;
-        case "s":
-            const t2Position = t2.offsetTop;
-            if (t2Position >=793) {
-                console.log(t2Position);
-                c++;
-                let s = document.querySelector('#s');
-                s.style.backgroundColor='green';
-            }
-            else{
-                c=0
-                s.style.backgroundColor='red';
-            }
-            break;
-        case "d":
-            const t3Position = t3.offsetTop;
-            if (t3Position >=793) {
-                console.log(t3Position);
-                c++;
-                let d = document.querySelector('#d');
-                d.style.backgroundColor='green';
+                p++;   
+                d.style.backgroundColor='green';                
             }
             else{
                 c=0
@@ -56,31 +31,50 @@ function press(key){
             }
             break;
         case "f":
+            const t2Position = t2.offsetTop;
+            if (t2Position >=793) {
+                console.log(t2Position);
+                c++;
+                p++;
+                f.style.backgroundColor='green';
+            }
+            else{
+                c=0
+                f.style.backgroundColor='red';
+            }
+            break;
+        case "j":
+            const t3Position = t3.offsetTop;
+            if (t3Position >=793) {
+                console.log(t3Position);
+                c++;
+                p++;
+                j.style.backgroundColor='green';
+            }
+            else{
+                c=0
+                j.style.backgroundColor='red';
+            }
+            break;
+        case "k":
             const t4Position = t4.offsetTop;
             if (t4Position >=793) {
                 console.log(t4Position);
                 c++;
-                let f = document.querySelector('#f');
-                f.style.backgroundColor='green';
-            }
-        case "g":
-            const t5Position = t5.offsetTop;
-            if (t5Position >=793) {
-                console.log(t5Position);
-                c++;
-                let g = document.querySelector('#g');
-                g.style.backgroundColor='green';
+                p++;
+                k.style.backgroundColor='green';
             }
             else{
                 c=0
-                g.style.backgroundColor='red';
+                k.style.backgroundColor='red';
             }
             break;
     }
     
     const cont = document.querySelector('#cont');
-    cont.innerHTML = c;
+    cont.innerHTML = p;
 }
+
 
 /*function press(x){
     switch (x) {

@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../site exemplo/styles/main.css">
     <title>teste</title>
 </head>
-<body background="https://cdn.shopify.com/s/files/1/0670/6082/6428/files/More_Purple_x800.jpg?v=1678302889">
-    
-    <h1 id="titulo">Rythim game</h1>
-    <div id="tela">
-        <h1 id="cont">0</h1>
-        <button id="amarelo" class="botao" onclick="press(2)">F</button>
-        <button id="laranja" class="botao" onclick="press(3)">J</button>
-        <button id="roxo" class="botao" onclick="press(4)">K</button>
-        <button id="vermelho" class="botao" onclick="press(1)">D</button>
+
+<body>
+    <h1 id="titulo" class="titulo">Rythim game</h1>
+    <div id="tela" class="tela">
+        <div class="tela__titulo">
+            <h1 id="cont">0</h1>
+        </div>
+        <div class="tela__titulo__botoes">
+            <button id="a" class="tela__titulo__botoes__botao" onclick="press(2)">A</button>
+            <button id="s" class="tela__titulo__botoes__botao" onclick="press(3)">S</button>
+            <button id="d" class="tela__titulo__botoes__botao" onclick="press(4)">D</button>
+            <button id="f" class="tela__titulo__botoes__botao" onclick="press(1)">F</button>
+            <button id="g" class="tela__titulo__botoes__botao" onclick="press(1)">G</button>
+        </div>
         <img src="img/traco_preto.png" id="t1">
         <img src="img/traco_preto.png" id="t2">
         <img src="img/traco_preto.png" id="t3">
         <img src="img/traco_preto.png" id="t4">
+        <img src="img/traco_preto.png" id="t5">
         
-        <!--img src="img/traco_amarelo.png" id="amarelo">
-        <img src="img/traco_laranja.png" id="laranja">
-        <img src="img/traco_roxo.png" id="roxo">
-        <img src="img/traco_vermelho.png" id="vermelho"-->
     </div>
 
     <script src="script.js"></script>

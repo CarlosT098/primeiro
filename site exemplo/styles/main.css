@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.titulo{
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+
+.tela{
+    background-image: url(../img/guitar-hero-highway.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.tela__titulo__botoes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.tela__titulo__botoes__botao{
+    width: 100px;
+    height: 5rem;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tela{ 
+    width: 700px;
+    height: 40rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px 5px rgb(22, 22, 22);
+}
+#t1{
+    position: absolute;
+    width: 175px;
+    animation: descer 1s infinite linear;
+}
+#t2{
+    position: absolute;
+    width: 175px;
+    margin-left: 175px;
+    animation: descer 4s infinite linear;
+}   
+#t3{
+    position: absolute;
+    width: 175px;
+    margin-left: 350px;
+    animation: descer 3s infinite linear;
+}
+#t4{
+    position: absolute;
+    width: 175px;
+    margin-left: 525px;
+    animation: descer 2s infinite linear;
+}
+
+button{
+    font-size:large;
+}
+@keyframes descer {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+h1{
+    text-align: center;
+}
+#cont{
+    margin-top: 20%;
+    
+}
+body img{
+    width: auto;
+    height: auto;
+}
