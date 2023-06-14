@@ -76,6 +76,7 @@ function press(key){
 }
 
 
+
 /*function press(x){
     switch (x) {
         case 1:
