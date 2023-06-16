@@ -50,40 +50,25 @@ body{
     margin-left: 525px;
     /*animation: descer 4s infinite linear;*/
 }
-#f{
-    position: absolute;
-    bottom: 5px;
-    width: 175px;
-    height: 100px;
+#f{   
     margin-left: 175px;
     
 }
 #j{
-    position: absolute;
-    bottom: 5px;
-    width: 175px;
-    height: 100px;
     margin-left: 350px;
     
 }
 #k{
-    position: absolute;
-    bottom: 5px;
-    width: 175px;
-    height: 100px;
     margin-left: 525px;
     
 }
-#d{
-    position:absolute;
-    bottom: 5px;
-    width: 175px;
-    height: 100px;
-    
-}
 button{
+    position:absolute;
+    width: 175px;
+    height: 60px;
     font-size:large;
-    margin-bottom:60px;
+    margin-bottom:100px;
+    bottom: 5px;
 }
 @keyframes descer {
     from {
