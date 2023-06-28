@@ -100,10 +100,9 @@ setInterval(()=>{
     const t3Position = t3.offsetTop;
     const t4Position = t4.offsetTop;
     //verificação se a barra está abaixo do botão
-    if (t1Position>820 && t1Position<830 || t2Position>820 && t2Position<830|| t3Position>880 || t4Position>880) {
+    if (t1Position>820 && t1Position<830 || t2Position>820 && t2Position<830|| t3Position>820 && t3Position<830 || t4Position>820 && t4Position<830) {
         barra++;
-        console.log(barra);
-
+        
         //confere se o usuario apertou antes da barra passar
        if (barra>c) {
         c=0;

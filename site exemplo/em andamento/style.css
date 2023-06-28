@@ -42,13 +42,13 @@ body{
     position: absolute;
     width: 175px;
     margin-left: 350px;
-    /*animation: descer 3s infinite linear;*/
+    animation: descer 3s infinite linear;
 }
 #t4{
     position: absolute;
     width: 175px;
     margin-left: 525px;
-    /*animation: descer 4s infinite linear;*/
+    animation: descer 4s infinite linear;
 }
 #f{   
     margin-left: 175px;
